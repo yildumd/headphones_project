@@ -176,4 +176,34 @@ textarea {
   color: white;
   font-size: 14px;
 }
+/* Results Section */
+.results-section {
+  background: url('images/headphones_hero_2.jpg') center center / cover no-repeat;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
 
+.results-section .section-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.results-section .section-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.result-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
