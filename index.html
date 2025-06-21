@@ -10,15 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <header class="header">
     <div class="container">
       <nav class="navbar">
         <img src="images/logo_headphones.png" alt="Headphones logo" class="logo" />
-        <div class="hamburger" id="hamburger">☰</div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#what-we-do">what we do</a></li>
-          <li><a href="#results">our results</a></li>
-          <li><a href="#contact">contact us</a></li>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">what we do</a></li>
+          <li><a href="#">our results</a></li>
+          <li><a href="#">contact us</a></li>
         </ul>
       </nav>
 
@@ -30,8 +31,7 @@
     </div>
   </header>
 
-  <!-- What We Do Section -->
-  <section id="what-we-do" class="what-we-do">
+  <section class="what-we-do">
     <div class="container">
       <h2 class="section-title">What we do</h2>
       <p class="section-description">
@@ -57,13 +57,10 @@
     </div>
   </section>
 
-  <!-- Our Results Section -->
-  <section id="results" class="results-section">
+  <section class="results-section">
     <div class="container">
       <h2 class="section-title">Our results speak for themselves</h2>
-      <p class="section-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque erat in blandit luctus.
-      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque erat in blandit luctus.</p>
       <div class="results-graphics">
         <img src="images/headphones_hero_2.jpg" alt="Results Graphic 1" />
         <img src="images/headphones_hero_2.jpg" alt="Results Graphic 2" />
@@ -73,8 +70,7 @@
     </div>
   </section>
 
-  <!-- Contact Us Section -->
-  <section id="contact" class="contact-section">
+  <section class="contact-section">
     <div class="container">
       <h2 class="section-title">Contact us</h2>
       <p>If you’d like to work with us or have any questions, feel free to reach out.</p>
@@ -94,20 +90,16 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Headphones | Built with love at ALX</p>
   </footer>
 
-  <!-- Hamburger Script -->
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
   </script>
+
 </body>
 </html>
 
