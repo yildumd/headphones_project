@@ -10,15 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- Header / Hero Section -->
   <header class="header">
     <div class="container">
       <nav class="navbar">
         <img src="images/logo_headphones.png" alt="Headphones logo" class="logo" />
-        <ul class="nav-links">
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="nav-links" id="nav-links">
           <li><a href="#what-we-do">what we do</a></li>
-          <li><a href="#our-results">our results</a></li>
+          <li><a href="#results">our results</a></li>
           <li><a href="#contact">contact us</a></li>
         </ul>
       </nav>
@@ -32,7 +31,7 @@
   </header>
 
   <!-- What We Do Section -->
-  <section class="what-we-do" id="what-we-do">
+  <section id="what-we-do" class="what-we-do">
     <div class="container">
       <h2 class="section-title">What we do</h2>
       <p class="section-description">
@@ -40,17 +39,17 @@
       </p>
       <div class="features">
         <div class="feature">
-          <img src="images/pentagone.png" alt="Icon 1" class="icon" />
+          <img src="images/pentagone.png" alt="Icon 1" class="icon">
           <h3>Custom Sound</h3>
           <p>Engineered for clean, rich, and balanced audio across all frequencies.</p>
         </div>
         <div class="feature">
-          <img src="images/pentagone.png" alt="Icon 2" class="icon" />
+          <img src="images/pentagone.png" alt="Icon 2" class="icon">
           <h3>All-day Comfort</h3>
           <p>Designed with premium materials to provide lasting comfort for long sessions.</p>
         </div>
         <div class="feature">
-          <img src="images/pentagone.png" alt="Icon 3" class="icon" />
+          <img src="images/pentagone.png" alt="Icon 3" class="icon">
           <h3>Wireless Freedom</h3>
           <p>Enjoy powerful sound without the hassle of wires or limits on movement.</p>
         </div>
@@ -59,23 +58,23 @@
   </section>
 
   <!-- Our Results Section -->
-  <section class="our-results" id="our-results">
+  <section id="results" class="results-section">
     <div class="container">
       <h2 class="section-title">Our results speak for themselves</h2>
       <p class="section-description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque erat in blandit luctus.
       </p>
       <div class="results-graphics">
-        <div class="result-box">Results Graphic 1</div>
-        <div class="result-box">Results Graphic 2</div>
-        <div class="result-box">Results Graphic 3</div>
-        <div class="result-box">Results Graphic 4</div>
+        <img src="images/headphones_hero_2.jpg" alt="Results Graphic 1" />
+        <img src="images/headphones_hero_2.jpg" alt="Results Graphic 2" />
+        <img src="images/headphones_hero_2.jpg" alt="Results Graphic 3" />
+        <img src="images/headphones_hero_2.jpg" alt="Results Graphic 4" />
       </div>
     </div>
   </section>
 
   <!-- Contact Us Section -->
-  <section class="contact-section" id="contact">
+  <section id="contact" class="contact-section">
     <div class="container">
       <h2 class="section-title">Contact us</h2>
       <p>If you’d like to work with us or have any questions, feel free to reach out.</p>
@@ -100,6 +99,15 @@
     <p>© 2025 Headphones | Built with love at ALX</p>
   </footer>
 
+  <!-- Hamburger Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
 
