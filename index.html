@@ -1,102 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Headphones</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="8-styles.css" />
-  <link rel="icon" href="images/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Headphones</title>
+    <meta name="description" content="Headphones landing page">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
+    <link rel="stylesheet" href="./holberton_school-icon/style.css">
+    <link rel="stylesheet" href="2-styles.css">
 </head>
 <body>
-
-  <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <img src="images/logo_headphones.png" alt="Headphones logo" class="logo" />
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#">what we do</a></li>
-          <li><a href="#">our results</a></li>
-          <li><a href="#">contact us</a></li>
-        </ul>
-      </nav>
-
-      <div class="hero">
-        <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-        <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-        <a href="#" class="btn">CALL TO ACTION</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="what-we-do">
-    <div class="container">
-      <h2 class="section-title">What we do</h2>
-      <p class="section-description">
-        We help you enjoy music the right way with high-quality sound and comfort. Here's how:
-      </p>
-      <div class="features">
-        <div class="feature">
-          <img src="images/pentagone.png" alt="Icon 1" class="icon">
-          <h3>Custom Sound</h3>
-          <p>Engineered for clean, rich, and balanced audio across all frequencies.</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label class="menu-icon" for="menu-btn">
+                    <span class="navicon"></span>
+                </label>
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="./images/logo_headphones.png" alt="Headphones logo" width="161" height="32">
+                    </a>
+                </div>
+                <nav class="navbar-menu">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#what-we-do" class="nav-link">what we do</a></li>
+                        <li class="nav-item"><a href="#our-results" class="nav-link">our results</a></li>
+                        <li class="nav-item"><a href="#contact-us" class="nav-link">contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="hero">
+                <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+                <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+                <button class="btn">CALL TO ACTION</button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </section>
         </div>
-        <div class="feature">
-          <img src="images/pentagone.png" alt="Icon 2" class="icon">
-          <h3>All-day Comfort</h3>
-          <p>Designed with premium materials to provide lasting comfort for long sessions.</p>
-        </div>
-        <div class="feature">
-          <img src="images/pentagone.png" alt="Icon 3" class="icon">
-          <h3>Wireless Freedom</h3>
-          <p>Enjoy powerful sound without the hassle of wires or limits on movement.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="results-section">
-    <div class="container">
-      <h2 class="section-title">Our results speak for themselves</h2>
-      <p class="section-description">
-        We are proud of our products and the people who use them. Here's a glimpse:
-      </p>
-      <div class="results-graphics">
-        <img src="images/pic1.jpg" alt="Result 1" />
-        <img src="images/pic2.jpg" alt="Result 2" />
-        <img src="images/pic3.jpg" alt="Result 3" />
-        <img src="images/pic4.jpg" alt="Result 4" />
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-section">
-    <div class="container">
-      <h2 class="section-title">Contact us</h2>
-      <p>If you’d like to work with us or have any questions, feel free to reach out.</p>
-      <form class="contact-form">
-        <div class="form-group">
-          <input type="text" name="first_name" placeholder="First name" required>
-          <input type="text" name="last_name" placeholder="Last name" required>
+    <!-- What we do... -->
+    <section id="what-we-do" class="section-what-we-do">
+        <div class="container">
+            <div class="section-header">
+                <h2>What we do...</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="section-body">
+                <div class="row">
+                    <div class="col-1-4">
+                        <div class="what-we-do-item">
+                            <span class="holberton_school-icon-ic_sound"></span>
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="what-we-do-item">
+                            <span class="holberton_school-icon-ic_video"></span>
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="what-we-do-item">
+                            <span class="holberton_school-icon-ic_music"></span>
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="what-we-do-item">
+                            <span class="holberton_school-icon-ic_hearing"></span>
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Email address" required>
-        </div>
-        <div class="form-group">
-          <textarea name="message" placeholder="Your message" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send</button>
-      </form>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <p>© 2025 Headphones | Built with love at ALX</p>
-  </footer>
-
-  <script src="8-script.js"></script>
+    <!-- Our results -->
+    <section id="our-results" class="section-our-results">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our results speak for themselves</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="section-body">
+                <div class="row">
+                    <div class="col-1-4">
+                        <div class="pentagon">
+                            <h3>+2%</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="pentagon">
+                            <h3>+2%</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="pentagon">
+                            <h3>+2%</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="pentagon">
+                            <h3>+2%</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
-
