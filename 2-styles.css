@@ -32,7 +32,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
-  position: relative;
 }
 
 .logo {
@@ -58,17 +57,9 @@ body {
 
 .hamburger {
   display: none;
+  font-size: 28px;
   cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  height: 3px;
-  background: white;
-  margin: 4px 0;
-  width: 25px;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+  color: #fff;
 }
 
 /* Hero Section */
@@ -148,6 +139,31 @@ body {
   color: #f96c00;
 }
 
+/* Our Results Section */
+.results-section {
+  padding: 60px 0;
+  background: url('images/headphones_hero_2.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+}
+
+.results-graphics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.results-graphics img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  animation: fadeIn 1.5s ease;
+}
+
 /* Contact Section */
 .contact-section {
   padding: 60px 20px;
@@ -165,8 +181,6 @@ body {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%;
-  margin-bottom: 15px;
 }
 
 .form-group textarea {
@@ -185,28 +199,39 @@ body {
 
 /* Animations */
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideUp {
-  0% { opacity: 0; transform: translateY(50px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Responsive - Hamburger Menu */
-@media screen and (max-width: 480px) {
+/* Responsive */
+@media screen and (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
     gap: 15px;
-    background: #1a1a1a;
+    background: #333;
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: 20px;
     padding: 20px;
     border-radius: 8px;
-    z-index: 99;
   }
 
   .nav-links.show {
@@ -214,15 +239,16 @@ body {
   }
 
   .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20px;
+    display: block;
   }
 
   .features {
     flex-direction: column;
     align-items: center;
+  }
+
+  .results-graphics {
+    flex-direction: column;
   }
 
   .hero h1 {

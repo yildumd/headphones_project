@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Headphones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="8-styles.css" />
+  <link rel="stylesheet" href="2-styles.css" />
   <link rel="icon" href="images/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -15,15 +15,7 @@
     <div class="container">
       <nav class="navbar">
         <img src="images/logo_headphones.png" alt="Headphones logo" class="logo" />
-
-        <!-- Hamburger Menu -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <!-- Navigation Links -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <ul class="nav-links" id="navLinks">
           <li><a href="#">what we do</a></li>
           <li><a href="#">our results</a></li>
@@ -89,7 +81,12 @@
     <p>© 2025 Headphones | Built with love at ALX</p>
   </footer>
 
-  <script src="8-script.js"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
 </body>
 </html>
 
