@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Headphones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="2-styles.css" />
+  <link rel="stylesheet" href="8-styles.css" />
   <link rel="icon" href="images/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -15,7 +15,15 @@
     <div class="container">
       <nav class="navbar">
         <img src="images/logo_headphones.png" alt="Headphones logo" class="logo" />
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
         <ul class="nav-links" id="navLinks">
           <li><a href="#">what we do</a></li>
           <li><a href="#">our results</a></li>
@@ -57,19 +65,6 @@
     </div>
   </section>
 
-  <section class="results-section">
-    <div class="container">
-      <h2 class="section-title">Our results speak for themselves</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque erat in blandit luctus.</p>
-      <div class="results-graphics">
-        <img src="images/headphones_hero_2.jpg" alt="Results Graphic 1" />
-        <img src="images/headphones_hero_2.jpg" alt="Results Graphic 2" />
-        <img src="images/headphones_hero_2.jpg" alt="Results Graphic 3" />
-        <img src="images/headphones_hero_2.jpg" alt="Results Graphic 4" />
-      </div>
-    </div>
-  </section>
-
   <section class="contact-section">
     <div class="container">
       <h2 class="section-title">Contact us</h2>
@@ -94,12 +89,7 @@
     <p>© 2025 Headphones | Built with love at ALX</p>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("navLinks").classList.toggle("show");
-    }
-  </script>
-
+  <script src="8-script.js"></script>
 </body>
 </html>
 
